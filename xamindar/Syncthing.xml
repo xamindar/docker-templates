@@ -50,7 +50,7 @@
 	- corrected syncthing port mappings to new ports
   </Changes>
   <Registry>https://registry.hub.docker.com/u/xamindar/syncthing/</Registry>
-  <GitHub>https://github.com/xamindar/docker-containers/tree/master/syncthing</GitHub>
+  <GitHub>https://github.com/xamindar/docker-syncthing/tree/master</GitHub>
   <Repository>xamindar/syncthing</Repository>
   <Support>http://lime-technology.com/forum/index.php?topic=39910</Support>
   <BindTime>true</BindTime>

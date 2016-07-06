@@ -15,7 +15,7 @@
 	Once this docker is running, connect to it with a Quassel Client and finish configuring it.
   </Description>
   <Registry>https://registry.hub.docker.com/u/xamindar/quassel-core/</Registry>
-  <GitHub>https://github.com/xamindar/docker-containers/tree/master/quassel-core</GitHub>
+  <GitHub>https://github.com/xamindar/docker-quassel-core/tree/master</GitHub>
   <Repository>xamindar/quassel-core</Repository>
   <Support>http://lime-technology.com/forum/index.php?topic=39910</Support>
   <BindTime>true</BindTime>
