@@ -2,6 +2,7 @@
 <Container>
   <Beta>False</Beta>
   <Category>Network:Messenger</Category>
+  <Date>2016-11-07</Date>
   <Name>Quassel-core</Name>
   <Overview>
 	Quassel IRC is a modern, cross-platform, distributed IRC client based on the Qt4 framework.    
@@ -13,14 +14,49 @@
     [b]/config[/b] : set this path to where you wish Quassel to store its configuration.[br]
     [b]Turn on "Advanced View" in the upper right to show Environment Variables. Set the environment variables to anything you want. They are used to create the SSL certificate upon first run of the docker.[b][br][br]
 	Once this docker is running, connect to it with a Quassel Client and finish configuring it.
-  </Description>
+</Description>
+  <Changes>
+       [center][font size=5]Syncthing Change Log[/font][/center]
+          [font size=4]2016-11-07[/font]
+          - Updated Docker template
+	  - Built updated docker
+  </Changes>
   <Registry>https://registry.hub.docker.com/u/xamindar/quassel-core/</Registry>
   <GitHub>https://github.com/xamindar/docker-quassel-core/tree/master</GitHub>
   <Repository>xamindar/quassel-core</Repository>
   <Support>http://lime-technology.com/forum/index.php?topic=39910</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment/>
+  <Environment>
+     	<Variable>
+          	<Name>SSL_COUNTRY</Name>
+          	<Value>WE</Value>
+     	</Variable>
+     	<Variable>
+        	<Name>SSL_STATE</Name>
+      		<Value>Kings Landing</Value>
+     	</Variable>
+     	<Variable>
+        	<Name>SSL_LOCATION</Name>
+         	<Value>Castle</Value>
+     	</Variable>
+      	<Variable>
+        	<Name>SSL_ORG</Name>
+      		<Value>Stark</Value>
+     	</Variable>
+    	<Variable>
+        	<Name>SSL_GROUP</Name>
+        	<Value>Bannermen</Value>
+   	</Variable>
+    	<Variable>
+        	<Name>SSL_NAME</Name>
+     		<Value>Bob</Value>
+    	</Variable>
+   	<Variable>
+      		<Name>SSL_EMAIL</Name>
+     		<Value>unraid@unraid.org</Value>
+  	</Variable>
+  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -31,39 +67,9 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>SSL_COUNTRY</Name>
-      <Value>WE</Value>
-    </Variable>
-    <Variable>
-      <Name>SSL_STATE</Name>
-      <Value>Kings Landing</Value>
-    </Variable>
-    <Variable>
-      <Name>SSL_LOCATION</Name>
-      <Value>Castle</Value>
-    </Variable>
-    <Variable>
-      <Name>SSL_ORG</Name>
-      <Value>Stark</Value>
-    </Variable>
-    <Variable>
-      <Name>SSL_GROUP</Name>
-      <Value>Bannermen</Value>
-    </Variable>
-    <Variable>
-      <Name>SSL_NAME</Name>
-      <Value>Bob</Value>
-    </Variable>
-     <Variable>
-      <Name>SSL_EMAIL</Name>
-      <Value>unraid@unraid.org</Value>
-    </Variable>
-  </Environment>    
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/quasselcore</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -71,5 +77,6 @@
   <Version></Version>
   <Banner>http://i.imgur.com/Y7Rx3H1.png</Banner>
   <Icon>https://i.imgur.com/UM4EqsF.png</Icon>
+  <ExtraParams></ExtraParams>
 </Container>
 
