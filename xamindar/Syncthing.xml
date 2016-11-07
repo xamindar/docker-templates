@@ -99,7 +99,7 @@
       <Name>RELAY_PING_INTERVAL</Name>
       <Value>1m0s</Value>
     </Variable>
-  <Environment/>
+  </Environment>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
