@@ -2,7 +2,7 @@
 <Container>
   <Beta>False</Beta>
   <Category>Backup: Cloud:</Category>
-  <Date>2016-07-06</Date>
+  <Date>2016-11-06</Date>
   <Name>Syncthing</Name>
   <Overview>
     Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it's transmitted over the Internet.
@@ -26,7 +26,13 @@
     Relay documentation: [b]http://docs.syncthing.net/users/relaying.html[/b] [/b]
   </Description>
   <Changes>
-	[center][font size=5]Syncthing Change Log[/font][/center]
+	  [center][font size=5]Syncthing Change Log[/font][/center]
+      [font size=4]2016-07-06[/font]
+	- Corrected Relay and Discovery commands
+	- Updated Syncthing to v0.14.10
+	- Updated Discovery server to 0.14.5
+	- Updated Relay server to 0.14.5
+
       [font size=4]2016-07-06[/font]
         - Corrected doc URLs in log
 
